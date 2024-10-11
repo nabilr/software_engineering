@@ -167,8 +167,46 @@
      - **Example**: The use case “Order from Catalogue” might have a pre-condition of “User is connected” and a post-condition of “Order record updated.”
 
 ---
+### **12. Use Case Analysis**
+   - **Definition and Purpose**
+     - Use cases define interactions between the system and external actors, capturing system functionality from the user's perspective.
+     - **Example**: In an ATM system, the use cases could include “Withdraw Cash,” “Check Balance,” and “Deposit Cash.”
 
-### **12. Requirements Documentation Standards**
+   - **Components of a Use Case**
+     - **Actors**: Entities (usually people or other systems) interacting with the system.
+     - **Initiator**: The primary actor who triggers the use case.
+     - **Description**: Overview of the use case scenario and its flow of events.
+     - **Pre-Conditions and Post-Conditions**: Requirements before and after the use case is executed.
+     - **Example**:
+       - **Use Case**: "Withdraw Cash"
+       - **Actors**: User, ATM
+       - **Pre-Condition**: User must be authenticated.
+       - **Post-Condition**: Cash is dispensed, and the account balance is updated.
+
+---
+
+### **13. ATM Use Case Example**
+   - **ATM Functions and Use Cases**
+     - **Login**: User enters a PIN to access account features.
+     - **Withdraw Cash**: User selects an account, enters an amount, and receives cash if funds are available.
+     - **Check Balance**: User can view their current account balance.
+     - **Transfer
+
+ Funds**: User can transfer money between accounts.
+     - **Deposit Cash**: User can add funds to their account via cash deposit.
+     - **Example**:
+       - **Withdraw Cash**:
+         - **Steps**:
+           1. User requests cash withdrawal.
+           2. ATM validates available funds.
+           3. If funds are sufficient, ATM dispenses cash and updates the balance.
+         - **Alternate Path**: If funds are insufficient, ATM displays an error message.
+
+
+
+---
+
+### **14. Requirements Documentation Standards**
    - **Requirements Document**
      - The formal statement of system requirements, focusing on what the system should do rather than how it will do it.
      - **Example**: It may include sections on the problem, background information, and specific functional and non-functional requirements.
