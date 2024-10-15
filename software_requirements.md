@@ -16,10 +16,9 @@
 4. **Documentation and Specifications**:
    - Requirements should be documented in a structured way, such as using standardized forms or graphical models like use-case diagrams and sequence diagrams.
 
+---
 
 ## Descriptive
-
-Certainly, here’s a detailed, textbook-style description of Chapter 4 on software requirements:
 
 ---
 
