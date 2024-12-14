@@ -8,5 +8,7 @@
 
 * [Use cases](usecases.md)
 
+* [Architect's Perpective](architect_perspective.md)
+
 
 
