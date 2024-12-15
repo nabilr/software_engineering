@@ -1,24 +1,8 @@
-* [Introduction to Software Engineering](ch1.md)
-
-* [Software Process](software_process.md)
-
-
-
-* [Feasibility Study](feasibility_study.md)
-
-* [Use cases](usecases.md)
-
-* [Architect's Perpective](architect_perspective.md)
-
-* [System Model](system_model.md)
-
-* [Testing](testing.md)
-
-Here’s a detailed, explanation** of **every section** in software engineering. Each section will focus on why it is important, how it connects to subsequent steps, and include relevant diagrams.
+ Here’s a detailed, explanation of **every section** in software engineering. Each section will focus on why it is important, how it connects to subsequent steps, and include relevant diagrams.
 
 ---
 
-### **1. * [Requirement Specification](software_requirements.md): Defining the Vision**
+### [Requirement Specification](software_requirements.md): Defining the Vision**
 #### **The Story: Capturing What Users Want**  
 Sarah, the product manager, starts by gathering everyone: stakeholders, future users, and the technical team. She asks, **“What do we want to achieve?”**
 
@@ -65,7 +49,7 @@ The requirements are handed to Mark, the technical lead, who will assess whether
 
 ---
 
-### **2. Feasibility Study: Can We Build It?**
+### [Feasibility Study](feasibility_study.md): Can We Build It?**
 #### **The Story: Reality Check**  
 Mark sits down with the technical team, while Emily, the finance manager, reviews the budget. They ask:  
 - **Technical Feasibility:**  
@@ -99,7 +83,7 @@ The feasibility report confirms the project is viable. Now Jane, the UX designer
 
 ---
 
-### **3. Use Cases: Stepping into Users’ Shoes**
+### [Use cases](usecases.md): Stepping into Users’ Shoes**
 #### **The Story: User Scenarios**  
 Jane brainstorms real-world scenarios to understand how users will interact with the app.  
 
@@ -137,7 +121,7 @@ Mark uses these use cases to build **system models**, which map out the app’s 
 
 ---
 
-### **4. System Models: The Technical Blueprint**  
+### [System Models](system_model.md): The Technical Blueprint**  
 
 After the **use cases** are created, Jane, the UX designer, has drawn how the app works from the user’s perspective. For instance:
 - Passengers book a ride.  
@@ -283,7 +267,7 @@ Without system models, the developers would have no guide for implementing the a
 
 ---
 
-### **5. Architecture Design: Structuring the System**
+###  [Architect's Perpective](architect_perspective.md): Structuring the System
 #### **The Story: Designing the Foundation**  
 With system models ready, Mark’s team creates the app’s architecture.  
 
@@ -325,7 +309,7 @@ The architecture guides implementation and lays the foundation for **testing**.
 
 ---
 
-### **6. Testing: Ensuring Quality**
+### [Testing](testing.md): Ensuring Quality
 #### **The Story: The Moment of Truth**  
 Sophia, the QA engineer, begins rigorous testing:  
 - **Unit Testing:** Does the “Book Ride” button work? Is the fare calculated correctly?  
