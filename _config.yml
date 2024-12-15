@@ -7,6 +7,9 @@ url: "https://nabilr.github.io" # Your GitHub Pages base URL
 # Theme
 theme: minima # Use the default Jekyll theme
 
+# Custom Layouts
+layouts_dir: _layouts
+
 # Navigation Sidebar
 sidebar:
   nav: "software_engineering"
