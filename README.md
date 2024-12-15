@@ -3,7 +3,7 @@
 ---
 
 ### [Requirement Specification](software_requirements.md): Defining the Vision
-#### **The Story: Capturing What Users Want**  
+#### **Capturing What Users Want**  
 Sarah, the product manager, starts by gathering everyone: stakeholders, future users, and the technical team. She asks, **“What do we want to achieve?”**
 
 - Passengers want:  
