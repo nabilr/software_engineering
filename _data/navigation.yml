@@ -1,9 +1,4 @@
-docs:
-  - title: "Home"
-    url: /
+software_engineering:
   - title: "Introduction"
-    url: /introduction
-  - title: "Section 1"
-    url: /section1
-  - title: "Section 2"
-    url: /section2
+    url: /readme
+ 
