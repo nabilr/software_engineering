@@ -2,7 +2,7 @@
 
 ---
 
-### [Requirement Specification](software_requirements.md): Defining the Vision**
+### [Requirement Specification](software_requirements.md): Defining the Vision
 #### **The Story: Capturing What Users Want**  
 Sarah, the product manager, starts by gathering everyone: stakeholders, future users, and the technical team. She asks, **“What do we want to achieve?”**
 
@@ -49,7 +49,7 @@ The requirements are handed to Mark, the technical lead, who will assess whether
 
 ---
 
-### [Feasibility Study](feasibility_study.md): Can We Build It?**
+### [Feasibility Study](feasibility_study.md): Can We Build It?
 #### **The Story: Reality Check**  
 Mark sits down with the technical team, while Emily, the finance manager, reviews the budget. They ask:  
 - **Technical Feasibility:**  
@@ -83,7 +83,7 @@ The feasibility report confirms the project is viable. Now Jane, the UX designer
 
 ---
 
-### [Use cases](usecases.md): Stepping into Users’ Shoes**
+### [Use cases](usecases.md): Stepping into Users’ Shoes
 #### **The Story: User Scenarios**  
 Jane brainstorms real-world scenarios to understand how users will interact with the app.  
 
@@ -121,7 +121,7 @@ Mark uses these use cases to build **system models**, which map out the app’s 
 
 ---
 
-### [System Models](system_model.md): The Technical Blueprint**  
+### [System Models](system_model.md): The Technical Blueprint
 
 After the **use cases** are created, Jane, the UX designer, has drawn how the app works from the user’s perspective. For instance:
 - Passengers book a ride.  
@@ -262,7 +262,6 @@ With system models in hand, the team can now confidently design the **architectu
 
 ---
 
-### **The Story Wraps Up**
 Without system models, the developers would have no guide for implementing the app. System models translate **what users need** into a clear, technical **how-to**, bridging the gap between use cases and architecture. They ensure the ride-hailing app is reliable, efficient, and scalable.
 
 ---
