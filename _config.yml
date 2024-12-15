@@ -4,15 +4,12 @@ description: A collection of software engineering topics explained with real-wor
 baseurl: "/software_engineering" # Subdirectory for your project
 url: "https://nabilr.github.io" # Your GitHub Pages base URL
 
+# Theme
+remote_theme: "mmistakes/minimal-mistakes" # Use the remote theme
 
-# Theme (Minimal Mistakes is an excellent choice for a sidebar)
-remote_theme: "mmistakes/minimal-mistakes" 
-
-# Navigation Sidebar (linking sections of your notes)
+# Navigation Sidebar
 sidebar:
   nav: "software_engineering"
-
-
 
 # Defaults
 defaults:
@@ -32,6 +29,6 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
-# Data includes (sidebar navigation file)
+# Data includes
 include:
   - _data/navigation.yml
