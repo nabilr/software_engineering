@@ -11,19 +11,7 @@ remote_theme: "mmistakes/minimal-mistakes" # Use the remote theme
 sidebar:
   nav: "software_engineering"
 
-# Defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: single
-      sidebar: true
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: single
-      sidebar: true
+
 
 # Markdown Settings
 markdown: kramdown
