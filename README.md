@@ -66,6 +66,7 @@ The feasibility study identifies key risks:
   - **Solution:** Use AWS Lambda to handle bursts of traffic.  
 
 **Diagram:** A **feasibility matrix** showing challenges and solutions:
+
 | **Aspect**           | **Challenge**               | **Solution**               | **Decision** |
 |-----------------------|-----------------------------|----------------------------|--------------|
 | GPS Integration       | High API cost              | Use free tier initially    | ✅ Feasible  |
