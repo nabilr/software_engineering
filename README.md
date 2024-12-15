@@ -1,3 +1,4 @@
+# Software Engineering
  Here’s a detailed, explanation of **every section** in software engineering. Each section will focus on why it is important, how it connects to subsequent steps, and include relevant diagrams.
 
 ---
