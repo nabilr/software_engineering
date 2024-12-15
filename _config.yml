@@ -11,7 +11,9 @@ remote_theme: "mmistakes/minimal-mistakes" # Use the remote theme
 sidebar:
   nav: "software_engineering"
 
-
+# Plugins
+plugins:
+  - jekyll-include-cache
 
 # Markdown Settings
 markdown: kramdown
