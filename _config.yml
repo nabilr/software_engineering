@@ -1,8 +1,40 @@
-theme: minima
-title: Software Engineering
-description: A site built with Jekyll and GitHub Pages
+# Site settings
+title: Software Engineering Notes
+description: A collection of software engineering topics explained with real-world examples
+baseurl: "" # Leave blank unless hosting in a subdirectory
+url: "https://username.github.io" # Replace 'username' with your GitHub username
 
+# Theme (Minimal Mistakes is an excellent choice for a sidebar)
+remote_theme: "mmistakes/minimal-mistakes" 
 
-header_pages:
-  - index.md
-  - about.md
+# Navigation Sidebar (linking sections of your notes)
+sidebar:
+  nav: "software_engineering"
+
+# Collection Settings (optional for notes organization)
+collections:
+  notes:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      sidebar: true
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      sidebar: true
+
+# Markdown Settings
+markdown: kramdown
+highlighter: rouge
+
+# Data includes (sidebar navigation file)
+include:
+  - _data/navigation.yml
