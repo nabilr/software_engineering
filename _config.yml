@@ -5,7 +5,7 @@ baseurl: "/software_engineering" # Subdirectory for your project
 url: "https://nabilr.github.io" # Your GitHub Pages base URL
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes" # Use the remote theme
+theme: minima # Use the default Jekyll theme
 
 # Navigation Sidebar
 sidebar:
