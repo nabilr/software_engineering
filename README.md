@@ -50,7 +50,7 @@ The requirements are handed to Mark, the technical lead, who will assess whether
 ---
 
 ### [Feasibility Study](feasibility_study.md): Can We Build It?
-#### **The Story: Reality Check**  
+#### **Reality Check**  
 Mark sits down with the technical team, while Emily, the finance manager, reviews the budget. They ask:  
 - **Technical Feasibility:**  
   - Mark: “Can we integrate live GPS tracking? Do we have enough server capacity?”  
@@ -85,7 +85,7 @@ The feasibility report confirms the project is viable. Now Jane, the UX designer
 ---
 
 ### [Use cases](usecases.md): Stepping into Users’ Shoes
-#### **The Story: User Scenarios**  
+#### **User Scenarios**  
 Jane brainstorms real-world scenarios to understand how users will interact with the app.  
 
 **Passenger Use Case:**  
@@ -268,7 +268,7 @@ Without system models, the developers would have no guide for implementing the a
 ---
 
 ###  [Architect's Perpective](architect_perspective.md): Structuring the System
-#### **The Story: Designing the Foundation**  
+#### **Designing the Foundation**  
 With system models ready, Mark’s team creates the app’s architecture.  
 
 **The Challenge:**  
@@ -310,7 +310,7 @@ The architecture guides implementation and lays the foundation for **testing**.
 ---
 
 ### [Testing](testing.md): Ensuring Quality
-#### **The Story: The Moment of Truth**  
+#### **The Moment of Truth**  
 Sophia, the QA engineer, begins rigorous testing:  
 - **Unit Testing:** Does the “Book Ride” button work? Is the fare calculated correctly?  
 - **Integration Testing:** Do notifications reach the driver when a ride is booked?  
