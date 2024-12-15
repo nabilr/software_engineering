@@ -1,20 +1,9 @@
-software_engineering:
-  - title: "Introduction"
-    url: /readme
-  - title: "Feasibility Study"
-    url: /feasibility_study
-  - title: "Use Cases"
-    url: /usecases
-  - title: "About"
-    url: /about
-  - title: "Chapter 1"
-    url: /ch1
-  - title: "Testing"
-    url: /testing
-  - title: "Software Process"
-    url: /software_process
-  - title: "Software Requirements"
-    url: /software_requirements
-  - title: "Architect's Perspective"
-    url: /architect_perspective
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Contact
+  url: /contact/
  
