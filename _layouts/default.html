@@ -15,6 +15,9 @@
           {% capture readme_content %}
             {% include_relative ../README.md %}
           {% endcapture %}
+          <!-- Debugging: Output raw content -->
+          <pre>{{ readme_content }}</pre>
+          <!-- Processed markdown content -->
           {{ readme_content | markdownify }}
         </div>
         <aside class="sidebar">
