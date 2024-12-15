@@ -12,7 +12,10 @@
       <div class="content">
         <div class="main-content">
           {{ content }}
-          {{ site.readme_content | markdownify }}
+          {% capture readme_content %}
+            {% include_relative ../README.md %}
+          {% endcapture %}
+          {{ readme_content | markdownify }}
         </div>
         <aside class="sidebar">
           {% include sidebar.html %}
