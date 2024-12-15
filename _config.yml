@@ -1,3 +1,8 @@
 theme: minima
 title: Software Engineering
 description: A site built with Jekyll and GitHub Pages
+
+
+header_pages:
+  - index.md
+  - about.md
