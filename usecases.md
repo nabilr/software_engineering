@@ -214,3 +214,111 @@ And so, with the use case model as the backbone, Alex built a system that didn�
 20. **Question:** What is the **Golden Rule** of use case names?  
     **Answer:** A use case name should indicate the value or goal achieved by the actor’s interaction with the system.
 
+
+### **Conceptual Questions**
+
+1. **What is a feasibility study?**
+   - A feasibility study evaluates the practicality and viability of a project before commitment. It identifies potential benefits, technical challenges, and risks.
+
+2. **What are the outcomes of a feasibility study?**
+   - **Go ahead**: Proceed with the project.
+   - **Do not go ahead**: Abandon the project.
+   - **Think again**: Revise the plan.
+
+3. **Why are feasibility studies challenging?**
+   - **Uncertainty**: Benefits are hard to quantify; resource/timeline estimates are rough.
+   - **Advocacy**: Stakeholders may overemphasize benefits and underplay risks.
+
+4. **Why is scope important in feasibility studies?**
+   - Scope defines project boundaries, avoiding misunderstandings about what is included/excluded.
+
+5. **What questions do decision-makers need answered?**
+   - **Client**: Who benefits?
+   - **Scope**: What is included/excluded?
+   - **Benefits**: What improvements will it bring?
+   - **Technical Feasibility**: Can it be done?
+   - **Resources**: What will it cost in terms of time, staff, and equipment?
+   - **Alternatives**: What happens if we don’t proceed?
+
+---
+
+### **Practical Questions**
+
+6. **What are common risks in feasibility studies?**
+   - **Technical Risks**: Infrastructure compatibility, scalability issues.
+   - **Organizational Risks**: Lack of expertise, resistance to workflow changes.
+   - **External Risks**: Integration with external systems, legal/regulatory challenges.
+
+7. **What makes a good feasibility report?**
+   - **Concise and comprehensive**: Covers scope, benefits, risks, resources.
+   - **Audience-focused**: Accessible for clients, technical teams, and managers.
+
+8. **What should a preliminary plan include?**
+   - Staffing and equipment needs.
+   - Major milestones and deadlines.
+   - External dependencies and deliverables.
+
+9. **What are the benefits of a feasibility study?**
+   - **Organizational**: Improved efficiency, reduced manual errors, faster response times.
+   - **Technical**: Clear system design, informed decisions about tools and architecture.
+
+---
+
+### **Scenario-Based Questions**
+
+10. **Steps to conduct a feasibility study for a payroll system?**
+   - Define scope (e.g., payroll calculations, employee database).
+   - Assess technical options (e.g., in-house or third-party development).
+   - Identify risks (e.g., data migration).
+   - Estimate resources (staff, timeline, cost).
+   - Recommend alternatives or mitigations.
+
+11. **How to handle technical risks identified during a feasibility study?**
+   - Validate assumptions through prototypes.
+   - Use phased implementation to test solutions incrementally.
+   - Reassess timelines and adjust resources if needed.
+
+---
+
+### **Checklist Questions**
+
+12. **Key checklist items for a feasibility study?**
+   - Team availability and skills.
+   - Timeline feasibility.
+   - Equipment and software requirements.
+   - Client involvement.
+   - Startup needs (training, licenses, etc.).
+
+13. **Key phases of a feasibility study?**
+   - **Initiation**: Identify the problem and objectives.
+   - **Analysis**: Assess scope, benefits, and risks.
+   - **Feasibility Assessment**: Technical, organizational, and resource evaluation.
+   - **Report Preparation**: Summarize findings and recommendations.
+   - **Decision**: Go ahead, revise, or abandon.
+
+---
+
+### **Comparison Questions**
+
+14. **Difference between organizational and technical feasibility?**
+   - **Organizational Feasibility**: Focuses on readiness (e.g., skills, workflows).
+   - **Technical Feasibility**: Focuses on system capability (e.g., design, scalability).
+
+15. **Waterfall model vs. phased approach in risk management?**
+   - **Waterfall Model**: Linear, assumes all requirements are known upfront, high risk if early stages fail.
+   - **Phased Approach**: Incremental delivery, allows adjustments at each stage, reduces risk.
+
+---
+
+### **Critical Thinking Questions**
+
+16. **Why can enthusiasm distort feasibility studies?**
+   - Enthusiasm fosters advocacy but can lead to underestimating risks and overpromising benefits.
+
+17. **How to improve the feasibility study process?**
+   - Include diverse perspectives (technical, financial, client).
+   - Use simulations or prototypes for validation.
+   - Maintain transparency about risks and uncertainties.
+
+---
+
