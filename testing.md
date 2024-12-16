@@ -169,3 +169,95 @@ Using **Black-Box Testing**, **White-Box Testing**, and techniques like **contro
 3. Capable of handling real-world scenarios.
 
 This approach combines comprehensive testing strategies to guarantee the system’s quality and reliability.
+
+### **Questions** 
+1. What is defect testing?  
+   - A testing process to discover defects in programs, ensuring the program behaves correctly under different conditions.
+
+2. What is the primary goal of debugging?  
+   - To locate and fix errors in the program.
+
+3. Explain the difference between testing and debugging.  
+   - Testing identifies defects by running the program with test cases, whereas debugging locates and fixes errors after testing identifies them.
+
+4. What is black-box testing?  
+   - A testing approach that ignores the internal program structure and focuses on system specifications.
+
+5. Describe the process of black-box testing.  
+   - In black-box testing, the program is tested based on its specifications without knowledge of its internal structure. Testers provide inputs and check the outputs.
+
+6. What is white-box testing?  
+   - A structural testing approach using program knowledge to derive test cases, aiming to exercise all program statements.
+
+7. How is white-box testing conducted?  
+   - Testers access system design, examine design documents, view the code, and observe the algorithms during runtime.
+
+8. Define equivalence partitioning.  
+   - Dividing input data into classes where the program behaves similarly for each member of the class.
+
+9. Give an example of equivalence classes.  
+   - For valid month input (1–12): Classes are [-∞, 0], [1–12], and [13, ∞].
+
+10. What is cyclomatic complexity?  
+    - A metric that measures the number of independent paths in a program.
+
+11. How is cyclomatic complexity calculated?  
+    - Cyclomatic Complexity = Edges - Nodes + 2.
+
+12. What does cyclomatic complexity indicate?  
+    - The number of independent paths in a program and the minimum number of tests required.
+
+13. Why is exhaustive path testing impractical?  
+    - Exhaustive path testing requires testing all possible paths, which can be astronomically large, making it infeasible in terms of time and resources.
+
+14. In black-box testing, what information is not accessible to testers?  
+    - Testers cannot access source code, internal data, or design documentation.
+
+15. In white-box testing, what specific coverage goals are typically targeted?  
+    - Covering all possible paths, edges, and nodes in the program.
+
+16. What is the purpose of component testing?  
+    - To test individual program components, ensuring they function as intended.
+
+17. Who is typically responsible for component testing?  
+    - Usually, the developer of the component.
+
+18. What is the purpose of integration testing?  
+    - To test groups of components integrated as a system or sub-system.
+
+19. Who typically conducts integration testing?  
+    - An independent testing team.
+
+20. Define test data.  
+    - Inputs devised to test the system.
+
+21. Define test cases.  
+    - A combination of inputs and expected outputs if the system operates according to its specification.
+
+22. What is the relationship between equivalence partitioning and test cases?  
+    - Test cases are chosen from each equivalence partition to ensure comprehensive testing.
+
+23. What are the primary challenges of path testing?  
+    - The number of unique paths can be astronomically large, making exhaustive testing impractical.
+
+24. A program accepts an input month number (1–12). What equivalence classes should be tested?  
+    - [-∞, 0], [1–12], and [13, ∞].
+
+25. A developer creates a control flow graph with 15 edges and 12 nodes. Calculate the cyclomatic complexity.  
+    - Cyclomatic Complexity = 15 - 12 + 2 = 5.
+
+26. A binary search program is being tested. What type of testing should be used to ensure all statements are tested?  
+    - White-box testing.
+
+27. How does black-box testing differ from white-box testing?  
+    - Black-box testing focuses on inputs and outputs without accessing the internal structure, while white-box testing involves analyzing the internal program logic and structure.
+
+28. In equivalence partitioning, why is it important to test each equivalence class?  
+    - To ensure that all possible input scenarios are covered effectively.
+
+29. What is the purpose of using a control flow graph in testing?  
+    - To systematically identify and test all paths, branches, and nodes in a program.
+
+30. Why does cyclomatic complexity not guarantee adequate testing?  
+    - It does not account for all combinations of paths, especially in programs with loops.
+
