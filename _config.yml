@@ -1,27 +1,8 @@
 # Site settings
 title: Software Engineering Notes
 description: A collection of software engineering topics explained with real-world examples
-baseurl: "/software_engineering" # Subdirectory for your project
-url: "https://nabilr.github.io" # Your GitHub Pages base URL
 
 # Theme
 theme: minima # Use the default Jekyll theme
 
-# Custom Layouts
-layouts_dir: _layouts
 
-# Navigation Sidebar
-sidebar:
-  nav: "software_engineering"
-
-# Plugins
-plugins:
-  - jekyll-include-cache
-
-# Markdown Settings
-markdown: kramdown
-highlighter: rouge
-
-# Data includes
-include:
-  - _data/navigation.yml
