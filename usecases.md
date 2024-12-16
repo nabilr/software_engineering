@@ -1,222 +1,216 @@
-### Introduction to Use Cases
-**Remember**: A use case captures the **interaction** between the user and the system, focusing on what the user wants to achieve without detailing how the system performs it.
+### **The Architect’s Journey: A Tale of Building a System**
 
-- **Example**: For an **online shopping system**, a use case like **“Place Order”** involves selecting items, adding them to a cart, and completing a purchase. 
-  - **UML Diagram**: In a UML use case diagram, the **Customer** would be represented by a stick figure labeled “Customer,” connected by a line to an oval labeled “Place Order,” indicating that the customer interacts with this functionality.
+Once upon a time, in the bustling town of Techville, an ambitious architect named Alex was given an exciting challenge: to design a revolutionary system for an online shopping platform. This wasn’t just any system—it had to be intuitive, scalable, and ready for the unexpected twists of real-world users.
 
 ---
 
-### Building a Use-Case Model – Step-by-Step
-**Remember**: Building a use-case model follows a process:
-1. **Identify Actors** – Who will use the system?
-2. **Identify Use Cases** – What actions will they take?
-3. **Define Relationships** – How do actors and use cases connect?
-4. **Outline Use Cases** – What are the step-by-step actions?
-5. **Refine Details** – What could go wrong or vary?
+#### **Act 1: The Characters Take the Stage**
 
-- **Example**: In a **hotel booking system**:
-   - **Identify Actors**: Customer and Receptionist.
-   - **Identify Use Cases**: Actions might include **“Book Room”** and **“Cancel Reservation.”**
-   - **Define Relationships**: The Customer is the primary actor for “Book Room,” while the Receptionist might assist in “Cancel Reservation.”
-   - **Outline Use Cases**: “Book Room” might involve selecting a room, entering payment details, and confirming the reservation.
-   - **Refine Details**: Add scenarios like what happens if no rooms are available.
+Before Alex could start sketching the blueprint, they knew one thing: every great story needs compelling characters. In the world of systems, these are called **actors**.
 
-  - **UML Diagram**: A UML diagram would show two stick figures labeled **Customer** and **Receptionist**, each connected to oval shapes labeled “Book Room” and “Cancel Reservation.” This visualizes the actions each actor takes with the system.
+- **Primary actors** are the heroes—the users with clear goals. For Alex, the primary actor was the **shopper**, who wanted to find items, add them to a cart, and place orders.
+- **Secondary actors** are the supporting cast. These include systems or roles that help the heroes achieve their goals, like the **payment gateway** or **inventory database**.
+
+Alex made a list of all the characters and their roles. This was the foundation of the story.
 
 ---
 
-### Actors
-**Remember**: **Actors** are the people or systems that **interact** with the system. They can be **primary** (directly benefiting from the system) or **secondary** (supporting the primary actors).
+#### **Act 2: Mapping the Story with Use Cases**
 
-- **Example**: In a **university registration system**:
-   - **Primary Actor**: **Student**, who registers for courses.
-   - **Secondary Actor**: **Registrar**, who verifies and processes registrations.
-   
-  - **UML Diagram**: In the UML use case diagram, both **Student** and **Registrar** would appear as stick figures. The **Student** would connect to “Register for Course,” while **Registrar** might connect to “Verify Registration,” showing their respective interactions.
+With the actors ready, Alex began weaving the story through **use cases**—the individual scenes where the actors interact with the system to achieve their goals.
 
----
+For example:
+1. **Search for Items**: The shopper looks for a product.
+2. **Add to Cart**: The shopper selects an item to purchase.
+3. **Place Order**: The shopper completes the purchase.
 
-### Primary vs. Secondary Actors
-**Remember**: A **primary actor** is the main user seeking a specific result, while a **secondary actor** helps them achieve it but does not directly benefit.
-
-- **Example**: In a **food delivery app**:
-   - **Primary Actor**: The **Customer**, who orders food.
-   - **Secondary Actor**: The **Delivery Driver**, who provides the delivery service.
-   
-  - **UML Diagram**: The **Customer** stick figure would be connected to the “Order Food” use case oval, and the **Delivery Driver** would connect to an oval labeled “Deliver Food,” indicating how they each interact with different parts of the system.
+Each use case was named clearly, using **verb-object format** like "Place Order," focusing on the shopper’s perspective. Alex avoided dull, system-centric names like "Payment Processing" because this wasn’t a story about the system—it was about the shopper.
 
 ---
 
-### Use Cases and Actor Relationships
-**Remember**: A **use-case model** describes who interacts with the system, what they do, and why. It captures the **goal** the actor wants to achieve.
+#### **Act 3: Building Depth with Relationships**
 
-- **Example**: For a **movie ticket booking system**:
-   - **Actor**: The **User**, who buys a ticket.
-   - **Interaction**: The user selects a movie, chooses seats, and completes payment.
-   - **Goal**: Reserve seats for a movie.
-   
-  - **UML Diagram**: The **User** stick figure would connect to multiple ovals: “Select Movie,” “Choose Seats,” and “Make Payment.” Arrows would represent the flow of interactions in sequence, showing the steps involved in achieving the goal.
+Alex knew that not all parts of the story could stand alone. Some scenes needed to reuse others, some had optional extensions, and others required a parent-child structure. This is where the relationships came in.
 
----
+1. **Include: The Reusable Scene**
+   - Alex realized that every use case required the shopper to log in. Instead of repeating this sequence, Alex created a separate use case called **Log In**.
+   - Now, "Log In" was **included** in other use cases like "Search for Items" and "Place Order." It was a shared subplot, much like a character making recurring appearances in different chapters.
 
-### Scenarios
-**Remember**: Each **use case** can have different **scenarios** or paths. There’s a main path (the goal) but also alternatives for what happens under varying conditions.
+   *For example:*
+   - Use Case: **Place Order**
+     - Step 1: Include **Log In**.
+     - Step 2: Add items to the cart.
+     - Step 3: Confirm payment.
 
-- **Example**: In an **ATM withdrawal system**:
-   - **Main Scenario**: The customer successfully withdraws cash.
-   - **Alternative Scenarios**: The system could decline if there are insufficient funds or if the ATM is out of cash.
-   
-  - **UML Diagram**: The **Customer** stick figure would connect to “Withdraw Cash.” Inside “Withdraw Cash,” you might see smaller ovals or notes showing alternate flows, like “Error: Insufficient Funds” and “Error: ATM Out of Cash.”
+2. **Extend: The Optional Twist**
+   - Not every shopper wants the same experience. Some prefer gift wrapping for their orders, while others don’t. Alex created a use case called **Specify Gift Wrap**, which **extends** the main "Place Order" use case.
+   - The main story could function perfectly without the extension, but for those who needed it, the extended sequence made the experience richer.
 
----
+   *For example:*
+   - Main Use Case: **Place Order**
+   - Extending Use Case: **Specify Gift Wrap**
 
-### Golden Rule of Use-Case Naming
-**Remember**: Name a use case to clearly show the **goal or value** achieved by the actor. Use a **verb-object** format like “Track Order” to describe what the actor is doing.
+   This showed how Alex could add optional behaviors without overcomplicating the main flow.
 
-- **Example**: In an **e-commerce platform**:
-   - **Good Name**: **“Track Order”** – Clearly reflects what the user wants to do.
-   - **Poor Name**: **“Order Tracking”** – Sounds procedural and less intuitive for the user.
-   
-  - **UML Diagram**: The **Customer** stick figure would connect to “Track Order” in the UML diagram, making it clear that this is an action they directly perform.
+3. **Generalization: The Family Tree**
+   - Alex also discovered that not all orders were the same. Some customers wanted a one-time purchase, while others signed up for recurring subscriptions. Both these cases stemmed from the same parent story—**Place Order**.
+   - Using **generalization**, Alex created child use cases like **Place Subscription Order** and **Place Single Order.** These inherited the steps of "Place Order" but added their unique details.
 
 ---
 
-### Naming Conventions
-**Remember**: Use case names should be **active**, **specific**, and from the **actor’s perspective**. This makes it clear what the actor is doing in the system.
+#### **Act 4: The Unexpected Turns (Scenarios)**
 
-- **Example**: In a **content management system**:
-   - **Preferred Name**: **“Publish Article”** – Active and descriptive of the user’s action.
-   - **Less Effective Name**: **“Article Publishing”** – Passive and doesn’t emphasize the actor’s role.
-   
-  - **UML Diagram**: The actor (e.g., **Editor** stick figure) would connect to “Publish Article,” showing a clear action in the diagram.
+No story is complete without a few twists. Alex knew that the system wouldn’t always follow the ideal path. Each use case had to account for both the **happy path** (the perfect scenario) and **alternate flows** (unexpected challenges).
 
----
+For "Place Order," Alex mapped:
+- **Main Flow**: The shopper logs in, adds items, and successfully pays.
+- **Alternative Flow 1**: The shopper’s payment is declined, and they’re prompted to retry.
+- **Alternative Flow 2**: The selected item is out of stock, and the system suggests similar products.
 
-### CRUD Naming Issues
-**Remember**: Avoid **CRUD terms** (Create, Retrieve, Update, Delete) alone, as they don’t indicate the **purpose** or goal. Instead, use names that show **intent**.
-
-- **Example**: In a **customer management system**:
-   - Instead of **“Create Contact,”** use **“Add New Contact”** to clarify the actor’s goal.
-   
-  - **UML Diagram**: The actor (e.g., **Admin** stick figure) connects to “Add New Contact” rather than “Create Contact,” making the action clear and purpose-driven in the use case model.
+This gave the system resilience, just like a well-prepared hero facing unforeseen obstacles.
 
 ---
 
-### Singular or Plural Naming
-**Remember**: Choose **singular or plural** based on how users typically interact with the system. This makes the name more intuitive.
+#### **Act 5: Refining the Plot**
 
-- **Example**: In a **retail checkout system**:
-   - Use **“Purchase Item”** for single-item purchases, like a vending machine.
-   - Use **“Purchase Items”** for multi-item purchases, like a supermarket.
-   
-  - **UML Diagram**: The **Customer** would be connected to either “Purchase Item” or “Purchase Items,” depending on the typical usage. This helps the actor understand the action more easily.
+Alex polished the story further:
+1. **Numbering the steps** for clarity.
+2. **Writing failure conditions** as extensions, so every path was covered.
+3. Keeping the language **clear and actor-focused**, avoiding technical jargon.
 
 ---
 
-### Association Relationship
-**Remember**: An **association** shows the **communication** between an actor and a use case, often represented by a line in UML diagrams.
+#### **Act 6: The Grand Blueprint**
 
-- **Example**: In a **library management system**, the **association** between the “Student” actor and “Borrow Book” use case is a line connecting them, showing the interaction path.
-  
-  - **UML Diagram**: The **Student** stick figure would connect to “Borrow Book” with a line, indicating the student’s participation in the system.
+By the end of the journey, Alex’s system had:
+1. **Actors** who brought life to the story—shoppers, payment systems, and administrators.
+2. **Use cases** that captured every interaction.
+3. **Relationships** like:
+   - **Include** for shared behaviors.
+   - **Extend** for optional adventures.
+   - **Generalization** for specialized scenarios.
+4. **Scenarios** that prepared the system for both smooth and bumpy rides.
 
----
+For example, Alex’s system for an **Online Recruitment System** featured:
+- **Application Subsystem**: Use cases like "Register Applicant" and "Submit Application."
+- **Selection Subsystem**: Use cases like "Rank Applications" and "Shortlist Candidates."
+- **Administration Subsystem**: Use cases like "Add Reviewer" and "Assign Roles."
 
-### Use Case Structure
-**Remember**: Use cases can have three main relationships:
-1. **Include**: For reusing common steps.
-2. **Extend**: For adding optional or conditional steps.
-3. **Generalization**: For cases where one use case inherits from another.
-
-- **Example**: In an **e-commerce website**:
-   - **Include**: “Log In” might be included in use cases like “Place Order” and “View Order History.”
-   - **Extend**: “Choose Gift Wrap” might extend “Purchase Item” as an optional step.
-   - **Generalization**: A general “Purchase” use case could lead to “Purchase Physical Item” or “Purchase Digital Item.”
-   
-  - **UML Diagram**: Each relationship would be shown with different UML notations: dashed arrows for “Include” and “Extend,” and a line with a hollow arrowhead for “Generalization.”
+Each subsystem used **include** for common steps (e.g., "Log In"), **extend** for optional features (e.g., "Add Notes to Application"), and **generalization** for specialized roles (e.g., "Graduate Application" and "Undergraduate Application").
 
 ---
 
-### Include Relationship
-**Remember**: **Include** means the use case **reuses common steps** or sub-actions. It’s like a subroutine in a program.
+#### **Epilogue: The Golden Rules**
+Alex reflected on the lessons learned:
+1. Always write from the **actor’s perspective**.
+2. Use **simple, active names** that describe the goal, not the process.
+3. Keep the story clear, logical, and prepared for real-world complexities.
 
-- **Example**: In a **food delivery app**, **“Order Food”** might **include** “Log In,” since logging in is required for other actions like ordering or updating details.
-  
-  - **UML Diagram**: “Order Food” would have a dashed arrow pointing to “Log In,” indicating that “Log In” is a reusable subroutine within “Order Food.”
-
----
-
-### Extends Relationship
-**Remember**: **Extend** adds **optional** or **conditional** steps to a base use case. It’s used for actions that only occur under certain conditions.
-
-
-
-- **Example**: In an **online bookstore**, **“Buy Book”** could **extend** to “Gift Wrap Option,” which only happens if the user selects it.
-  
-  - **UML Diagram**: “Gift Wrap Option” would have a dashed arrow labeled <<extend>> pointing back to “Buy Book,” indicating that this is an optional behavior linked to the main purchase.
+And so, with the use case model as the backbone, Alex built a system that didn’t just work—it thrived, delighting its users and proving that every great system begins with a great story.
 
 ---
 
-### Include vs. Extends
-**Remember**: 
-- **Include**: Always needed and reusable, like a common subroutine.
-- **Extend**: Adds behavior that is optional or conditional, activated only in specific cases.
+### **Section 1: Basics of Use Cases**
+1. **Question:** What is a use case, and why is it important in system design?  
+   **Answer:** A use case is a goal-oriented sequence of interactions between actors and a system that yields a valuable result to the actor. It is important because it helps in understanding the system’s behavior, capturing and specifying requirements, and ensuring the system meets user needs.
 
-- **Example**: In a **travel booking system**:
-   - **Include**: “Book Flight” might include “Enter Payment Details” because payment is always required.
-   - **Extend**: “Choose Seat” might extend “Book Flight” if seat selection is optional.
-   
-  - **UML Diagram**: “Book Flight” would include “Enter Payment Details” with a dashed arrow pointing to it. “Choose Seat” would extend “Book Flight” with a dashed arrow indicating optional behavior.
+2. **Question:** Who introduced the use case technique, and when?  
+   **Answer:** The use case technique was introduced by Ivar Jacobson in 1992 as part of his Object-Oriented Software Engineering methodology.
 
----
-
-### Generalization Relationship
-**Remember**: **Generalization** lets one use case **inherit steps** from another, like a parent-child relationship. It’s useful for shared core behaviors.
-
-- **Example**: In a **restaurant reservation system**:
-   - A general “Make Reservation” use case could have specialized versions like “Make Dine-In Reservation” or “Make Takeout Reservation.”
-   
-  - **UML Diagram**: “Make Dine-In Reservation” and “Make Takeout Reservation” would connect to “Make Reservation” using lines with hollow arrowheads, representing inheritance.
+3. **Question:** What is the difference between a primary actor and a secondary actor?  
+   **Answer:** A primary actor interacts with the system to achieve a goal and derives direct benefit from it. A secondary actor supports the system or the primary actor but does not directly achieve a goal.
 
 ---
 
-### Fire Alarm System Example
-**Remember**: Use cases can apply to **different domains**. They capture various responses and actions required for different scenarios.
+### **Section 2: Steps in Use Case Modeling**
+4. **Question:** List the five steps in building a use case model.  
+   **Answer:**  
+   - Step 1: Identify and describe the actors.  
+   - Step 2: Identify the use cases and write a brief description.  
+   - Step 3: Identify the actor and use-case relationships.  
+   - Step 4: Outline the individual use cases.  
+   - Step 5: Refine the use cases.
 
-- **Example**: In a **fire alarm system**, a primary use case might be **“Trigger Alarm,”** connected to other use cases like **“Notify Fire Department”** and **“Evacuate Building.”**
-  
-  - **UML Diagram**: **Trigger Alarm** would connect to **Notify Fire Department** and **Evacuate Building** with association lines, representing the actions triggered by an alarm activation.
-
----
-
-### Building the Use Case Models
-**Remember**: Begin by **defining the system boundaries and actors**, then identify the interactions to form the foundation of the use-case model.
-
-- **Example**: In a **hospital management system**:
-   - **Actors**: Doctors, Patients, and Nurses.
-   - **Use Cases**: “Schedule Appointment” and “Access Patient Records.”
-   - **Relationships**: Show which actor is responsible for which use case.
-   
-  - **UML Diagram**: The diagram would include stick figures for **Doctors, Patients,** and **Nurses** connected to the respective use cases they interact with, such as “Schedule Appointment.”
+5. **Question:** What are scenarios in the context of use cases? Provide an example.  
+   **Answer:** A scenario is an instance of a use case representing a single path through it.  
+   Example: For an ATM withdrawal use case:  
+   - **Scenario 1:** Successful withdrawal.  
+   - **Scenario 2:** Insufficient funds in the account.  
+   - **Scenario 3:** ATM has insufficient cash.
 
 ---
 
-### UGRU Online Recruitment System Example
-**Remember**: Use cases help illustrate **complex systems** with different actors and stages. They support comprehensive processes by organizing interactions and detailing relationships.
+### **Section 3: Relationships in Use Cases**
+6. **Question:** What is an **Include** relationship in a use case? Provide an example.  
+   **Answer:** An include relationship means that the behavior of one use case (the included use case) is reused by another (the base use case).  
+   Example: The "Log In" use case is included in "Place Order" because logging in is required before placing an order.
 
-- **Example**: In a **recruitment system**, actors like **Applicant, Administrator,** and **Director** interact with use cases like **“Submit Application,”** **“Review Application,”** and **“Select Candidate.”**
-  
-  - **UML Diagram**: The diagram would feature stick figures for **Applicant, Administrator,** and **Director** with association lines to various ovals like “Submit Application” or “Select Candidate,” showing their specific interactions.
+7. **Question:** Explain the **Extend** relationship with an example.  
+   **Answer:** An extend relationship allows one use case to add optional or conditional behavior to another.  
+   Example: "Specify Gift Wrap" extends the "Place Order" use case, as gift wrapping is optional.
 
----
-
-### Subsystems
-**Remember**: Complex systems often include subsystems grouping related interactions.
-
-- **Example**: In a **university application system**, the **Application Subsystem** might involve “Submit Application” and “Track Status.”
-  
-  - **UML Diagram**: A larger oval labeled **Application Subsystem** would contain smaller ovals for each individual use case within it. The **Student** actor would connect to the **Application Subsystem** with lines to the various contained use cases like “Submit Application.”
+8. **Question:** What is the **Generalization** relationship in use cases? Provide an example.  
+   **Answer:** Generalization is a parent-child relationship where the child use case inherits the parent’s attributes and behavior but may also add its own.  
+   Example: "Place Subscription Order" generalizes the "Place Order" use case.
 
 ---
 
-These explanations and UML diagram descriptions offer a practical approach to understanding each concept and how it visually represents the system's interactions.
+### **Section 4: Naming Use Cases**
+9. **Question:** What are the guidelines for naming a use case?  
+   **Answer:**  
+   - Use verb-object format (e.g., "Buy Concert Ticket").  
+   - Be specific and actor-focused.  
+   - Avoid procedural names like CRUD (Create, Read, Update, Delete).  
+   - Avoid system-centric names.
+
+10. **Question:** Why is "Ticket Purchase" a poor name for a use case?  
+    **Answer:** It is passive and lacks specificity about the actor’s intention. A better name would be "Purchase Concert Ticket."
+
+---
+
+### **Section 5: Practical Application**
+11. **Question:** Describe the main success scenario and an alternative flow for the "Place Order" use case.  
+    **Answer:**  
+    - **Main Success Scenario:** The customer logs in, selects items, adds them to the cart, and completes the payment.  
+    - **Alternative Flow:** The payment fails, and the system prompts the customer to retry or use another payment method.
+
+12. **Question:** How does a system designer handle failure conditions in a use case?  
+    **Answer:** Failure conditions are documented as extensions after the main success scenario, detailing what happens if a step fails.
+
+---
+
+### **Section 6: Examples and Subsystems**
+13. **Question:** What are the key use cases in an Online Recruitment System’s Application Subsystem?  
+    **Answer:**  
+    - Register Applicant.  
+    - Submit Application.  
+    - Track Application.
+
+14. **Question:** In the Online Recruitment System, what relationship exists between "Log In" and other subsystems?  
+    **Answer:** "Log In" is included in all subsystems (Application, Selection, and Administration) because it is a common behavior.
+
+15. **Question:** Which use case relationship best models optional behavior?  
+    **Answer:** The **Extend** relationship is best suited for modeling optional behavior.
+
+---
+
+### **Section 7: Miscellaneous**
+16. **Question:** What is the purpose of creating a system boundary in a use case model?  
+    **Answer:** A system boundary defines the scope of the system and identifies what is inside (system functionality) and what is outside (external actors).
+
+17. **Question:** Why is it important to refine use cases?  
+    **Answer:** Refining use cases ensures clarity, completeness, and preparation for real-world scenarios. It involves detailing steps, addressing failure conditions, and improving readability.
+
+18. **Question:** Differentiate between **Main Flow** and **Alternative Flow** in a use case.  
+    **Answer:**  
+    - **Main Flow:** The primary path where everything works as expected (e.g., successful order placement).  
+    - **Alternative Flow:** Variations or failures that deviate from the main path (e.g., payment failure).
+
+19. **Question:** How does **Include** differ from **Extend** in use cases?  
+    **Answer:**  
+    - **Include**: Adds mandatory, reusable behavior (e.g., "Log In" included in "Place Order").  
+    - **Extend**: Adds optional or conditional behavior (e.g., "Specify Gift Wrap" extends "Place Order").
+
+20. **Question:** What is the **Golden Rule** of use case names?  
+    **Answer:** A use case name should indicate the value or goal achieved by the actor’s interaction with the system.
+
