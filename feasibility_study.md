@@ -168,3 +168,127 @@ Here’s a visual summary of the journey:
 
 ### **Conclusion**
 The feasibility study is a compass for navigating the uncertainties of complex projects. By thoroughly analyzing scope, risks, and resources, the government agency avoided costly mistakes and ensured they were prepared for their digital transformation journey.
+
+
+
+
+### **Conceptual Questions**
+
+1. **What is a feasibility study, and why is it an essential step before starting a project?**
+   - A feasibility study is an analysis conducted to determine whether a project is practical and achievable. It evaluates technical, organizational, and resource factors. It is crucial because it helps avoid costly mistakes, aligns project goals with organizational capabilities, and provides a framework for decision-making.
+
+2. **What are the possible outcomes of a feasibility study?**
+   - The study can conclude with:
+     1. **Go ahead**: Proceed with the project.
+     2. **Do not go ahead**: Abandon the project.
+     3. **Think again**: Revisit the project scope, resources, or risks.
+
+3. **Why are feasibility studies difficult to conduct?**
+   - **Uncertainty**: Benefits are hard to quantify; resource and time estimates are rough.
+   - **Advocacy**: Stakeholders may overemphasize benefits while underplaying risks.
+
+4. **Why is defining the scope of a project critical in a feasibility study?**
+   - A clear scope sets boundaries, detailing included and excluded functions. This ensures stakeholders have realistic expectations, avoiding dissatisfaction like **“I assumed the system would do XYZ!”** or **“I need feature ABC!”**
+
+5. **What key questions do decision-makers need answered in a feasibility study?**
+   - **Client**: Who benefits?
+   - **Scope**: What are the boundaries?
+   - **Benefits**: What organizational improvements will result?
+   - **Technical Feasibility**: Can the project be implemented?
+   - **Resources**: What staff, time, and tools are required?
+   - **Alternatives**: What happens if the project isn’t pursued?
+
+---
+
+### **Practical/Application-Based Questions**
+
+6. **What are the common risks identified during a feasibility study, and how can they be mitigated?**
+   - **Technical Risks**: Use phased delivery to validate systems early.
+   - **Organizational Risks**: Train staff and prepare workflows in advance.
+   - **External Risks**: Engage stakeholders and address regulatory concerns upfront.
+
+7. **Based on the government agency example, discuss the consequences of approving a project before conducting a feasibility study.**
+   - Key Issues:
+     - Senior management wasn’t prepared for large-scale changes.
+     - Scope and data policies weren’t studied beforehand.
+     - Result: Significant challenges arose post-implementation, leading to inefficiency and wasted resources.
+
+8. **What are the characteristics of a well-written feasibility report?**
+   - **Audience-focused**: Tailored for both technical and non-technical stakeholders.
+   - **Concise yet comprehensive**: Includes scope, benefits, risks, and resources.
+   - **Clear fallback options**: Details alternatives and risk mitigation strategies.
+
+9. **Describe the elements included in a preliminary plan during a feasibility study.**
+   - Staffing and equipment needs.
+   - Timelines with milestones and decision points.
+   - External system dependencies and deliverables.
+
+---
+
+### **Scenario-Based Questions**
+
+10. **Imagine an organization wants to implement a new payroll system. Outline the steps they would take in conducting a feasibility study.**
+   - **Step 1**: Define scope (e.g., payroll calculation, employee database).
+   - **Step 2**: Assess technical options (e.g., in-house or outsourced development).
+   - **Step 3**: Quantify benefits (e.g., reduced errors, faster processing).
+   - **Step 4**: Identify risks (e.g., data migration challenges) and alternatives (e.g., upgrading the current system).
+
+11. **If a project team identifies a major technical risk during a feasibility study, what should their next steps be?**
+   - Conduct additional analysis to validate assumptions.
+   - Explore phased implementation to test solutions incrementally.
+   - Revisit technical feasibility and adjust scope or timelines if necessary.
+
+---
+
+### **Checklist and Process Questions**
+
+12. **What are the key points included in a feasibility study checklist?**
+   - Team availability and skills.
+   - Timelines and deadlines.
+   - Equipment and software needs.
+   - Client involvement and availability.
+   - Business considerations (e.g., licensing, trade-secrets).
+
+13. **Outline the key phases of a feasibility study from initiation to decision-making.**
+   - **Phase 1: Problem Identification**: Understand the problem and objectives.
+   - **Phase 2: Preliminary Analysis**: Define scope, benefits, and risks.
+   - **Phase 3: Detailed Feasibility Assessment**:
+     - Technical: System designs, resource estimates.
+     - Organizational: Workflow changes, training needs.
+     - Financial: Cost-benefit analysis.
+   - **Phase 4: Risk and Alternatives**: Identify risks and fallback options.
+   - **Phase 5: Report Preparation and Decision**: Summarize findings and propose recommendations.
+
+---
+
+### **Comparison Questions**
+
+14. **Compare and contrast organizational feasibility and technical feasibility.**
+   - **Organizational Feasibility**:
+     - Focus: Internal readiness, such as expertise and workflow changes.
+     - Example: Do staff have the skills to manage the system?
+   - **Technical Feasibility**:
+     - Focus: Technical capabilities, such as infrastructure and system design.
+     - Example: Can the database handle millions of transactions?
+
+15. **Compare the waterfall model to a phased approach in managing risks identified during a feasibility study.**
+   - **Waterfall Model**:
+     - Linear, sequential process.
+     - High risk of failure if early assumptions are incorrect.
+   - **Phased Approach**:
+     - Incremental delivery of features.
+     - Allows risk mitigation and adjustments at each phase.
+
+---
+
+### **Critical Thinking Questions**
+
+16. **Evaluate the statement: "Enthusiasm for a project often leads to underestimating risks and overestimating benefits."**
+   - Enthusiasm drives advocacy, which is necessary for buy-in. However, unchecked enthusiasm can overshadow critical risks, such as organizational readiness or technical limitations. A balanced approach with objective evaluation is essential.
+
+17. **How can a feasibility study process be improved to ensure a more accurate evaluation?**
+   - Include diverse perspectives, such as technical experts, end-users, and financial analysts.
+   - Use data-driven methods, like prototypes or simulations, to validate assumptions.
+   - Maintain transparency about risks and uncertainties.
+
+---
