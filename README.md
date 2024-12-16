@@ -1,8 +1,3 @@
----
-title: Software Engineering
-layout: default
----
-
 **Definition of Software Engineering:**  
 Software engineering is the systematic application of engineering principles to the design, development, testing, deployment, and maintenance of software systems. It emphasizes creating reliable, efficient, and scalable solutions tailored to meet user needs while managing project constraints such as time, cost, and quality.
 
